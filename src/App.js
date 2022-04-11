@@ -1,7 +1,7 @@
 import React,{useState}from "react";
 import "./style.css";
 import obj from "./utils/CheckBox.js"
-
+import Main from "./utils/Main.js"
 export default function App() {
   let[check,setCheck]=useState([])
   
@@ -28,9 +28,11 @@ export default function App() {
            <label for={ele.category}>{ele.category}</label><br/> 
             
             </>
+
           )
         })
       }
+      <Main  obj={check}/>
      
     </div>
   );
