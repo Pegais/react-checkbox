@@ -10,14 +10,12 @@ export default function App() {
            
            if(e.target.checked){
              console.log(id,value)
-             setCheck([...check,{[id]:value}])
+             setCheck([...check,{id:id,value:value}])
 
            }else{
-            setCheck((prevState)=>{
-               return prevState.filter(ele=>ele!==prevState)
-            })
+           setCheck(check.filter(ele=>ele.value!=value))
           }
-          }
+        }
           console.log(check)
   // console.log(obj)
   return (
@@ -28,6 +26,7 @@ export default function App() {
             <>
            <input type="checkbox" id={ele.id} name={ele.category} value={ele.category} onChange={handleclick} />
            <label for={ele.category}>{ele.category}</label><br/> 
+            
             </>
           )
         })
