@@ -14,6 +14,14 @@ let obj=[
     id:"4",
     category:"pant",
 
+  },{
+    id:"5",
+    category:"trouser",
+
+  },{
+    id:"6",
+    category:"tie",
+
   }
 
 
