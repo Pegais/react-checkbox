@@ -10,10 +10,10 @@ export default function App() {
            
            if(e.target.checked){
              console.log(id,value)
-             setCheck([...check,{id:id,value:value}])
+             setCheck([...check,value])
 
            }else{
-           setCheck(check.filter(ele=>ele.value!=value))
+           setCheck(check.filter(ele=>ele!=value))
           }
         }
           console.log(check)
