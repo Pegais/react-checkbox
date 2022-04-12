@@ -18,6 +18,8 @@ console.log("this is from main ",obj)
       return obj.includes(ele.category)
      }else if(ele.category.includes(input)){
        return ele
+     }else if(ele.type.includes(input)){
+        return ele
      }
    })
    
